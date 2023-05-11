@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      .main {
+        height: 100vh;
+        width: 100%;
+        
+      }
+      .page1{
+         height: 100%;
+        width: 100%;
+        /* background-color: aquamarine; */
+        /* position: relative; */
+        padding-top: 0.1px;
+      }
+      .page1 .nav{
+        
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        margin-top: 40px;
+        display: flex;
+        /* gap: 30px; */
+        align-items: center;
+        justify-content: space-evenly;
+        height: 10%;
+        width: 100%;
+        /* background-color: burlywood; */
+        position: relative;
+      }
+      .nav nav{
+        /* padding-left: 30px; */
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        /* height: 100%; */
+       
+        /* background-color: #413f3f; */
+        font-size: 17px;
+        font-weight: 500;
+        font-family: gilroy;
+      }
+      .nav nav a{
+         padding: 22px 70px;
+        height: 100%;
+        border-right: 2px solid black;
+        color: black;
+        text-decoration: none;
+        text-transform: capitalize;
+
+      }
+      .nav h1{
+        font-family: Monument;
+        text-transform: lowercase;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: -2px;
+        font-size: 37px;
+        /* margin-left: -50px; */
+      }
+      .nav h1 sup{
+        margin-left: -10px;
+        font-size: 20px;
+        font-weight: 100;
+      }
+        
+      .nav h1 sub{
+        letter-spacing: 1px;
+         position: absolute;
+        margin-left: -10px;
+        font-size: 8px;
+        font-weight: 100;
+        top: 70%;
+        left: 10%;
+      }
+
+      .nav nav i{
+        font-weight: 700;
+      }
+      .image{
+        position: relative;
+        margin-left: 5%;
+        margin-top: 33px;
+        height: 485px;
+        width: 90%;
+        background-color: blue;
+        background-image: url(https://images.unsplash.com/photo-1534008757030-27299c4371b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9kZWxzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+        background-size: cover;
+        background-position: bottom;
+
+          }
+          .imgcont{
+            /* text-align: center; */
+            position: absolute;
+            bottom: 0px;
+            height: 200px;
+            width: 100%;
+            /* background-color: #685f5f; */
+          }
+          .imgcont .heading{
+            color: #fff;
+            margin-left: 30px;
+            border-bottom: 2px solid #fff;
+            width: 90%;
+            /* background-color: #fff; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+          }
+          .heading div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+            width: 70px;
+            border: 2px solid rgb(240, 234, 234);
+            border-radius: 50px;
+            /* background-color: aqua; */
+          }
+          .heading h2{
+            letter-spacing: 5px;
+            font-family: Monument;
+            text-transform: capitalize;
+            font-size: 45px;
+          }
+          .imgcont .btm{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+            margin-top: 10px;
+            margin-left: 38px;
+            height: 50px;
+            width: 90%;
+            /* background-color: #fff; */
+          }
+          .btm p{
+            font-family: gilroy;
+            font-size: 16px;
+            text-transform: capitalize;
+          }
+          .btm i{
+            font-weight: 100;
+            font-size: 30px;
+          }
+          .page2{
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            background-color: #FFF;
+          }
+          .circles{
+             white-space: nowrap;
+             overflow: hidden;
+             position: absolute;
+            text-align: center;
+            gap: 30px;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            height: 20%;
+            width: 100%;
+            /* background-color: #918888; */
+          }
+          .circles .a{
+            border-radius: 50%;
+            height: 75px;
+            width: 110px;
+            background-color: #000;
+          }
+          .circles .a img{
+           height: 100%;
+           object-fit: contain;
+           border-radius: 50%;
+          }
+          .circle1 p{
+            padding: 4px;
+            text-transform: capitalize;
+          }
+          .circle1{
+            animation: txt 4s linear infinite alternate;
+          }
+
+          @keyframes txt{
+
+    0%{
+        transform: translateX(0);
+    }100%{
+        transform: translateX(-80%);
+    }
+}
+
+        
+         
+          
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="page1">
+        <div class="nav">
+            <h1>premier <sup>&copy;</sup>
+            <sub>model management</sub>
+            </h1>
+          <nav>
+            <a href="">models</a>
+            <a href="">womans/mans</a>
+            <a href="">agency/blog/information</a>
+            <i class="ri-search-line"></i>
+          </nav>
+        </div>
+        <div class="image">
+            <div class="imgcont">
+                <div class="heading">
+                    <h2>photography <br>and films</h2>
+                    <div>01</div>
+                </div>
+                <div class="btm">
+                    <p>explore</p>
+                    <i class="ri-arrow-right-line"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+      </div>
+      <div class="page2">
+        <div class="circles">
+          <div class="circle1">
+            <div class="a">
+            <img src="https://images.unsplash.com/photo-1534008757030-27299c4371b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9kZWxzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>
+          <p>chen liu</p>
+          </div>
+           <div class="circle1">
+            <div class="a">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vZGVsc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>
+          <p>elise wildle</p>
+          </div>
+             <div class="circle1">
+            <div class="a">
+            <img src="https://images.unsplash.com/photo-1514626585111-9aa86183ac98?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>
+          <p>wilds lui</p>
+          </div>
+           <div class="circle1">
+            <div class="a">
+            <img src="https://images.unsplash.com/photo-1522767131594-6b7e96848fba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>
+          <p>lei kange</p>
+          </div>
+             <div class="circle1">
+            <div class="a">
+            <img src="https://images.unsplash.com/photo-1551024739-78e9d60c45ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>
+          <p>name</p>
+          </div>
+            <div class="circle1">
+            <div class="a">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vZGVsc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>
+          <p>elise wildle</p>
+          </div>
+             <div class="circle1">
+            <div class="a">
+            <img src="https://images.unsplash.com/photo-1514626585111-9aa86183ac98?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>
+          <p>wilds lui</p>
+          </div>
+           <div class="circle1">
+            <div class="a">
+            <img src="https://images.unsplash.com/photo-1522767131594-6b7e96848fba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>
+          <p>lei kange</p>
+          </div>
+               <div class="circle1">
+            <div class="a">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vZGVsc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>
+          <p>elise wildle</p>
+          </div>
+             <div class="circle1">
+            <div class="a">
+            <img src="https://images.unsplash.com/photo-1514626585111-9aa86183ac98?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>
+          <p>wilds lui</p>
+          </div>
+           <div class="circle1">
+            <div class="a">
+            <img src="https://images.unsplash.com/photo-1522767131594-6b7e96848fba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>
+          <p>lei kange</p>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </body>
+</html>
