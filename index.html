@@ -99,18 +99,25 @@
         height: 485px;
         width: 90%;
         background-color: blue;
-        background-image: url(https://images.unsplash.com/photo-1534008757030-27299c4371b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9kZWxzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+        /* background-image: url(https://images.unsplash.com/photo-1534008757030-27299c4371b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9kZWxzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
         background-size: cover;
-        background-position: bottom;
+        background-position: bottom; */
 
+          }
+          .image video{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position:40% 60%;
           }
           .imgcont{
             /* text-align: center; */
             position: absolute;
             bottom: 0px;
             height: 200px;
-            width: 100%;
+            width: 99%;
             /* background-color: #685f5f; */
+            padding-left: 20px;
           }
           .imgcont .heading{
             color: #fff;
@@ -138,7 +145,8 @@
             font-family: Monument;
             text-transform: capitalize;
             font-size: 45px;
-          }
+/* mix-blend-mode:dar;     */
+      }
           .imgcont .btm{
             display: flex;
             align-items: center;
@@ -148,16 +156,16 @@
             margin-left: 38px;
             height: 50px;
             width: 90%;
-            /* background-color: #fff; */
+            /* background-color: #000000; */
           }
           .btm p{
             font-family: gilroy;
             font-size: 16px;
             text-transform: capitalize;
           }
-          .btm i{
-            font-weight: 100;
-            font-size: 30px;
+          .btm img{
+            height: 35px;
+            /* position: absolute; */
           }
           .page2{
             position: relative;
@@ -170,7 +178,7 @@
              overflow: hidden;
              position: absolute;
             text-align: center;
-            gap: 30px;
+            gap: 25px;
             display: flex;
             align-items: center;
             margin-top: 20px;
@@ -194,15 +202,15 @@
             text-transform: capitalize;
           }
           .circle1{
-            animation: txt 4s linear infinite alternate;
+            animation: txt 5s linear infinite alternate-reverse ;
           }
 
           @keyframes txt{
 
     0%{
-        transform: translateX(0);
+        transform: translateX(-100%);
     }100%{
-        transform: translateX(-80%);
+        transform: translateX(0%);
     }
 }
 
@@ -229,6 +237,7 @@
           </nav>
         </div>
         <div class="image">
+          <video autoplay muted loop src="https://cdn.pixabay.com/vimeo/506369737/Waterfall%20-%2063283.mp4?width=1280&hash=b3366df977cfc9032d55604f14f2ab549e5b0a85"></video>
             <div class="imgcont">
                 <div class="heading">
                     <h2>photography <br>and films</h2>
@@ -236,7 +245,7 @@
                 </div>
                 <div class="btm">
                     <p>explore</p>
-                    <i class="ri-arrow-right-line"></i>
+                    <img src="/arrow.png" alt="">
 
                 </div>
 
