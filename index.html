@@ -1,517 +1,1322 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        /* scrollbar-width: none; */
-        /* overflow-x: hidden; */
-      }
-      *::selection{
-        color:black;
-        background-color:  gold;
 
-      }
-      html,
-      body {
-        height: 100%;
-        width: 100%;
-      }
-      .main {
-        /* overflow-x: hidden; */
-        height: 100vh;
-        width: 100%;
-        
-      }
-      .page1{
-         height: 100%;
-        width: 100%;
-        /* background-color: aquamarine; */
-        /* position: relative; */
-        padding-top: 0.1px;
-      }
-      .page1 .nav{
-        
-        border-bottom: 2px solid black;
-        border-top: 2px solid black;
-        margin-top: 40px;
-        display: flex;
-        /* gap: 30px; */
-        align-items: center;
-        justify-content: space-evenly;
-        height: 10%;
-        width: 100%;
-        /* background-color: burlywood; */
-        position: relative;
-      }
-      .nav nav{
-        /* padding-left: 30px; */
-        /* position: relative; */
-        display: flex;
-        align-items: center;
-        gap: 35px;
-        /* height: 100%; */
-       
-        /* background-color: #413f3f; */
-        font-size: 17px;
-        font-weight: 500;
-        font-family: gilroy;
-      }
-      .nav nav a{
-         padding: 22px 70px;
-        height: 100%;
-        border-right: 2px solid black;
-        color: black;
-        text-decoration: none;
-        text-transform: capitalize;
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      /* scrollbar-width: none; */
+      /* overflow-x: hidden; */
+    }
 
-      }
-      .nav h1{
-        font-family: Monument;
-        text-transform: lowercase;
-        font-size: 40px;
-        font-weight: 600;
-        letter-spacing: -2px;
-        font-size: 37px;
-        /* margin-left: -50px; */
-      }
-      .nav h1 sup{
-        margin-left: -10px;
-        font-size: 20px;
-        font-weight: 100;
-      }
-        
-      .nav h1 sub{
-        letter-spacing: 1px;
-         position: absolute;
-        margin-left: -10px;
-        font-size: 8px;
-        font-weight: 100;
-        top: 70%;
-        left: 10%;
-      }
+    *::selection {
+      color: black;
+      background-color: gold;
 
-      .nav nav i{
-        font-weight: 700;
-      }
-      .image{
-        position: relative;
-        margin-left: 5%;
-        margin-top: 33px;
-        height: 485px;
-        width: 90%;
-        background-color: blue;
-        /* background-image: url(https://images.unsplash.com/photo-1534008757030-27299c4371b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9kZWxzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+
+    .main {
+      /* overflow-x: hidden; */
+      height: 100vh;
+      width: 100%;
+
+    }
+
+    .page1 {
+      height: 100%;
+      width: 100%;
+      /* background-color: aquamarine; */
+      /* position: relative; */
+      padding-top: 0.1px;
+    }
+
+    .page1 .nav {
+
+      border-bottom: 2px solid black;
+      border-top: 2px solid black;
+      margin-top: 40px;
+      display: flex;
+      /* gap: 30px; */
+      align-items: center;
+      justify-content: space-evenly;
+      height: 10%;
+      width: 100%;
+      /* background-color: burlywood; */
+      position: relative;
+    }
+
+    .nav nav {
+      /* padding-left: 30px; */
+      /* position: relative; */
+      display: flex;
+      align-items: center;
+      gap: 35px;
+      /* height: 100%; */
+
+      /* background-color: #413f3f; */
+      font-size: 17px;
+      font-weight: 500;
+      font-family: gilroy;
+    }
+
+    .nav nav a {
+      padding: 22px 70px;
+      height: 100%;
+      border-right: 2px solid black;
+      color: black;
+      text-decoration: none;
+      text-transform: capitalize;
+
+    }
+
+    .nav h1 {
+      font-family: Monument;
+      text-transform: lowercase;
+      font-size: 40px;
+      font-weight: 600;
+      letter-spacing: -2px;
+      font-size: 37px;
+      /* margin-left: -50px; */
+    }
+
+    .nav h1 sup {
+      margin-left: -10px;
+      font-size: 20px;
+      font-weight: 100;
+    }
+
+    .nav h1 sub {
+      letter-spacing: 1px;
+      position: absolute;
+      margin-left: -10px;
+      font-size: 8px;
+      font-weight: 100;
+      top: 70%;
+      left: 10%;
+    }
+
+    .nav nav i {
+      font-weight: 700;
+    }
+
+    .image {
+      position: relative;
+      margin-left: 5%;
+      margin-top: 33px;
+      height: 485px;
+      width: 90%;
+      background-color: blue;
+      /* background-image: url(https://images.unsplash.com/photo-1534008757030-27299c4371b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9kZWxzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
         background-size: cover;
         background-position: bottom; */
 
-          }
-          .image video{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position:40% 60%;
-          }
-          .imgcont{
-            /* text-align: center; */
-            position: absolute;
-            bottom: 0px;
-            height: 200px;
-            width: 99%;
-            /* background-color: #685f5f; */
-            padding-left: 20px;
-          }
-          .imgcont .heading{
-            color: #fff;
-            margin-left: 30px;
-            border-bottom: 2px solid #fff;
-            width: 90%;
-            /* background-color: #fff; */
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px;
-          }
-          .heading div{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 70px;
-            width: 70px;
-            border: 2px solid rgb(240, 234, 234);
-            border-radius: 50px;
-            /* background-color: aqua; */
-          }
-          .heading h2{
-            letter-spacing: 5px;
-            font-family: Monument;
-            text-transform: capitalize;
-            font-size: 45px;
-/* mix-blend-mode:dar;     */
-      }
-          .imgcont .btm{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            color: #fff;
-            margin-top: 10px;
-            margin-left: 38px;
-            height: 50px;
-            width: 90%;
-            /* background-color: #000000; */
-          }
-          .btm p{
-            font-family: gilroy;
-            font-size: 16px;
-            text-transform: capitalize;
-          }
-          .btm img{
-            height: 35px;
-            /* position: absolute; */
-          }
-        
-.scroller{
-  padding-top: 30px;
-  height: 20%;
-  width: 100%;
-  white-space: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-  /* background-color: brown; */
-}
-.scroller::-webkit-scrollbar{
-  display: none;
-}
+    }
 
-.container{
-  display: inline-block;
-  /* padding: 30px; */
-  height: 100%;
-  width: 100%;
-  /* background-color: #4e3333; */
-  animation: txt 10s linear  infinite ;
-  /* animation-play-state: paused; */
-}
-.scroller:hover .container{
-  animation-play-state: paused;
-  cursor: pointer;
-  /* -moz-animation-play-state: paused; */
-} 
-/* .scroller .container:nth-child(2){
+    .image video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: 40% 60%;
+    }
+
+    .imgcont {
+      /* text-align: center; */
+      position: absolute;
+      bottom: 0px;
+      height: 200px;
+      width: 99%;
+      /* background-color: #dad2d262; */
+      padding-left: 20px;
+    }
+
+    .imgcont .heading {
+      color: #fff;
+      margin-left: 30px;
+      border-bottom: 2px solid #fff;
+      width: 90%;
+      /* background-color: #fff; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .heading div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70px;
+      width: 70px;
+      border: 2px solid rgb(240, 234, 234);
+      border-radius: 50px;
+      /* background-color: aqua; */
+    }
+
+    .heading h2 {
+      letter-spacing: 5px;
+      font-family: Monument;
+      text-transform: capitalize;
+      font-size: 45px;
+      /* mix-blend-mode:dar;     */
+    }
+
+    .imgcont .btm {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+      margin-top: 10px;
+      margin-left: 38px;
+      height: 50px;
+      width: 90%;
+      /* background-color: #000000; */
+    }
+
+    .btm p {
+      font-family: gilroy;
+      font-size: 16px;
+      text-transform: capitalize;
+    }
+
+    .btm img {
+      height: 35px;
+      /* position: absolute; */
+    }
+
+    .scroller {
+      padding-top: 30px;
+      height: 20%;
+      width: 100%;
+      white-space: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      /* background-color: brown; */
+    }
+
+    .scroller::-webkit-scrollbar {
+      display: none;
+    }
+
+    .container {
+      display: inline-block;
+      /* padding: 30px; */
+      height: 100%;
+      width: 100%;
+      /* background-color: #4e3333; */
+      animation: txt 10s linear infinite;
+      /* animation-play-state: paused; */
+    }
+
+    .scroller:hover .container {
+      animation-play-state: paused;
+      cursor: pointer;
+      /* -moz-animation-play-state: paused; */
+    }
+
+    /* .scroller .container:nth-child(2){
   margin-left: 100px;
 } */
-.elem{
-  margin-right: 35px;
-  display: inline-block;
-  font-weight: 500;
-  font-size: 12px;
-  text-transform: capitalize;
-  text-align: center;
-  height: 100px;
-  width: 110px;
-  /* background-color: blueviolet */
-}
-.elem img{
-
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
- @keyframes txt{
-
-    0%{
-        transform: translateX(0%);
-    }100%{
-        transform: translateX(-100%);
+    .elem {
+      margin-right: 35px;
+      display: inline-block;
+      font-weight: 500;
+      font-size: 12px;
+      text-transform: capitalize;
+      text-align: center;
+      height: 100px;
+      width: 110px;
+      /* background-color: blueviolet */
     }
-}
 
-.page2{
-  height: calc(100% - 20%);
-  width: 100%;
-  /* background-color: brown; */
-}
-.page2 .alphabet{
-  margin-top: 30px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  background-color: #fff;
-  height: 10%;
-  width:100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
+    .elem img {
 
-}
-.alphabet p{
-  font-style: italic;
-  font-size: 12px;
-  text-transform: uppercase;
-  padding: 5px 8px;
-  border-radius: 50%;
-  border: 1px solid rgb(255, 255, 255);
-  font-weight: 900;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
 
-}
-.alphabet p:hover{
-  padding: 5px 8px;
-  border-radius: 50%;
-  border: 1px solid black;
-  cursor: pointer;
+    @keyframes txt {
 
-}
-.alphabet p:nth-child(7){
-    border: 1px solid black;
+      0% {
+        transform: translateX(0%);
+      }
 
+      100% {
+        transform: translateX(-100%);
+      }
+    }
 
-}
-.alphabet h5{
-  font-style: italic;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 900;
+    .page2 {
+      height: 130%;
+      width: 100%;
+      /* background-color: brown; */
+    }
 
-}
-.imagesection{
-  height: 100%;
-  width: 100%;
-  /* background-color: #644848; */
-  display: flex;
-}
-.page2-left{
-  height: 500px;
-  width: 60%;
-  /* display: inline-block; */
-  
-}
-.page2-left img{
-  padding-left: 20%;
-  padding-top: 30px;
-  height: 85%;
-  width: 50%;
-  object-fit: cover;
-}
-.page2-left h2{
-  font-size: 30px;
-  font-family: monument;
-  text-transform: uppercase;
-  padding-left: 20%;
-  padding-top: 5px;
-}
-.page2-right{
-  position: relative;
-  /* display: inline-block; */
-  height: 100%;;
-  width: 40%;
-  /* background-color: #837373; */
+    .page2 .alphabet {
+      margin-top: 30px;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      background-color: #fff;
+      height: 10%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
 
-}
-.page2-right img{
-  padding-top: 30px;
-   height: 70%;
-  width: 65%;
-  object-fit: cover;
-  object-position: 50% 30%;
-}
-.page2-right h3{
-  padding-top: 3px;
-  width: 155px;
-  font-size: 20px;
-  text-transform: capitalize;
-  
-}
-.page2-right p{
- bottom: 10px;
- left: 35%;
-  position: absolute;
-  width: 145px;
-  font-size: 16px;
-  text-transform: capitalize;
-}
+    }
+
+    .alphabet p {
+      font-style: italic;
+      font-size: 12px;
+      text-transform: uppercase;
+      padding: 5px 8px;
+      border-radius: 50%;
+      border: 1px solid rgb(255, 255, 255);
+      font-weight: 900;
+
+    }
+
+    .alphabet p:hover {
+      padding: 5px 8px;
+      border-radius: 50%;
+      border: 1px solid black;
+      cursor: pointer;
+
+    }
+
+    .alphabet p:nth-child(7) {
+      border: 1px solid black;
 
 
-        
-         
-          
+    }
+
+    .alphabet h5 {
+      font-style: italic;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 900;
+
+    }
+
+    .imagesection {
+      height: 100%;
+      width: 100%;
+      /* background-color: #644848; */
+      display: flex;
+    }
+
+    .page2-left {
+      height: 500px;
+      width: 60%;
+      /* display: inline-block; */
+
+    }
+
+    .page2-left img {
+      padding-left: 10%;
+      padding-top: 30px;
+      height: 125%;
+      width: 85%;
+      object-fit: cover;
+    }
+
+    .page2-left h2 {
+      font-size: 35px;
+      font-family: monument;
+      text-transform: uppercase;
+      padding-left: 10%;
+      padding-top: 5px;
+    }
+
+    .page2-right {
+      position: relative;
+      /* display: inline-block; */
+      height: 100%;
+      ;
+      width: 40%;
+      /* background-color: #837373; */
+
+    }
+
+    .page2-right img {
+      padding-top: 30px;
+      height: 55%;
+      width: 85%;
+      object-fit: cover;
+      object-position: 50% 30%;
+    }
+
+    .page2-right h3 {
+      padding-top: 3px;
+      width: 195px;
+      font-size: 20px;
+      text-transform: capitalize;
+
+    }
+
+    .page2-right p {
+      bottom: 30%;
+      left: 46%;
+      position: absolute;
+      width: 205px;
+      font-size: 16px;
+      text-transform: capitalize;
+    }
+
+    .page3 {
+      height: 100vh;
+      width: 100%;
+      /* background-color: blue; */
+      display: flex;
+    }
+
+    .page3-left {
+      position: relative;
+      height: 100%;
+      width: 50%;
+      /* background-color: rgb(78, 78, 109); */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .page3-left .animation {
+      /* mix-blend-mode: difference; */
+      position: absolute;
+      transform: rotate(90deg);
+      animation: move 5s linear infinite;
+      z-index: 5;
+    }
+    .page3-left .animation:hover{
+      animation-play-state: paused;
+      cursor: pointer;
+    }
+
+
+    @keyframes move {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+
+    }
+
+    .page3-left .arrow {
+      position: absolute;
+      z-index: 10;
+      height: 50px;
+      mix-blend-mode: difference;
+    }
+
+    .page3-left p {
+      position: absolute;
+      bottom: 40px;
+      left: 10%;
+      width: 50%;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
 
 
 
-    </style>
-  </head>
-  <body>
-    <div class="main">
-      <div class="page1">
-        <div class="nav">
-            <h1>premier <sup>&copy;</sup>
-            <sub>model management</sub>
-            </h1>
-          <nav>
-            <a href="">models</a>
-            <a href="">womans/mans</a>
-            <a href="">agency/blog/information</a>
-            <i class="ri-search-line"></i>
-          </nav>
-        </div>
-        <div class="image">
-          <video autoplay muted loop src="https://cdn.pixabay.com/vimeo/506369737/Waterfall%20-%2063283.mp4?width=1280&hash=b3366df977cfc9032d55604f14f2ab549e5b0a85"></video>
-            <div class="imgcont">
-                <div class="heading">
-                    <h2>photography <br>and films</h2>
-                    <div>01</div>
-                </div>
-                <div class="btm">
-                    <p>explore</p>
-                    <img src="/arrow.png" alt="">
+    .page3-right {
+      height: 100%;
+      width: 50%;
+      /* background-color: rgb(129, 56, 163); */
+      padding: 20px;
+    }
 
-                </div>
+    .page3-right img {
+      height: 90%;
+      width: 90%;
+      object-fit: cover;
 
-            </div>
+    }
 
-        </div>
+    .page4 {
+      /* margin: 1px; */
+      height: 90%;
+      width: 100%;
+      /* background-color: aqua; */
+      /* padding: 10px; */
+    }
+
+    .page4 img {
+      margin-top: 30px;
+      margin-left: 5%;
+      height: 95%;
+      width: 90%;
+      object-fit: cover;
+    }
+
+    .page5 {
+      height: 100%;
+      width: 100%;
+      padding-top: 50px;
+      /* background-color: #754444; */
+
+    }
+
+    .page5 .a {
+      padding-bottom: 60px;
+      text-transform: uppercase;
+      font-family: monument;
+      text-align: center;
+      font-size: 50px;
+    }
+
+    .page5 .box {
+      border-top: 2px solid black;
+      text-transform: capitalize;
+      margin-left: 5%;
+      height: 15%;
+      width: 90%;
+      /* background-color: blue; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .page5 .boxtxt {
+      width: 20%;
+      margin-right: 20%;
+    }
+
+    .page5 .box h1 {
+      margin: 120px;
+      width: 50px;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      /* font-weight: ; */
+      /* font-family: monument; */
+    }
+
+    .boxtxt h2 {
+      font-family: gilroy;
+      font-size: 25px;
+    }
+
+    .page5 .box:nth-last-child(1) {
+      border-bottom: 2px solid black;
+    }
+
+    .page5 .box img {
+      position: absolute;
+      height: 70px;
+      width: 70px;
+      object-fit: cover;
+      border-radius: 50px;
+      left: 20%;
+      opacity: 0;
+      transition: .5s;
+    }
+
+    .page5 .box:hover img {
+      left: 34%;
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    .page6 {
+      height: 90%;
+      width: 100%;
+      display: flex;
+      /* background-color: blueviolet; */
+    }
+
+    .page6-left {
+      height: 100%;
+      width: 55%;
+      /* background-color: blue; */
+    }
+
+    .page6-left img {
+      padding-left: 10%;
+      padding-top: 30px;
+      height: 93%;
+      width: 80%;
+      object-fit: cover;
+      object-position: 50% 30%;
+    }
+
+    .page6-right {
+      height: 100%;
+      width: 45%;
+      /* background-color: rgb(44, 44, 160); */
+    }
+
+    .page6-right h1 {
+      text-transform: uppercase;
+      padding-top: 30px;
+      font-size: 30px;
+      font-family: monument;
+
+    }
+
+    .page6-right h5 {
+      padding-top: 20px;
+      text-transform: capitalize;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .page6-right p {
+      padding-top: 20px;
+      font-size: 12px;
+      text-transform: capitalize;
+      font-family: serif;
+      width: 70%;
+    }
+
+    .page6-right .images {
+      position: relative;
+      margin-top: 20px;
+      display: flex;
+      height: 300px;
+      width: 90%;
+      /* background-color: blanchedalmond; */
+      gap: 10px;
+    }
+
+    .images .first {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .images .second {
+      width: 35%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .page7 {
+      position: relative;
+      /* padding: 30px; */
+      height: 80%;
+      width: 100%;
+      /* background-size: cover; */
+      /* background-image: url(https://images.unsplash.com/photo-1509549649946-f1b6276d4f35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60); */
+    }
+
+    .page7 img {
+      height: 90%;
+      width: 90%;
+      padding: 40px;
+      margin-left: 3%;
+      object-fit: cover;
+      object-position: 50% 10%;
+    }
+
+    .page8 {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      /* background-color: aqua; */
+    }
+
+    .page8 .page8-left {
+      height: 110%;
+      width: 55%;
+      /* background-color: blue; */
+
+    }
+
+    .page8-left img {
+      padding-top: 28px;
+      margin-left: 11%;
+      height: 85%;
+      width: 95%;
+      object-fit: cover;
+      object-position: 50% 20%;
+    }
+
+    .page8 .page8-right {
+      padding-left: 10%;
+      height: 110%;
+      width: 45%;
+      /* background-color: rgb(64, 64, 121); */
+
+    }
+
+    .page8-right .box8txt {
+      display: flex;
+      gap: 100px;
+      height: 150px;
+      width: 480px;
+      /* background-color: brown; */
+    }
+
+    .page8-right h3 {
+      width: 50%;
+      padding-top: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+
+    .page8-right p {
+      width: 60%;
+      padding-top: 10px;
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+
+    .page8-right img {
+      object-fit: cover;
+      padding-top: 30px;
+      height: 70%;
+      width: 90%;
+    }
+
+    .page9 {
+      position: relative;
+      /* padding: 1px; */
+      height: 100%;
+      width: 100%;
+      /* background-color: #422828; */
+    }
+
+    .page9 .movetxt {
+      position: relative;
+      margin-top: 30px;
+      height: 11%;
+      width: 100%;
+      /* background-color: #F5F5F8; */
+      white-space: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding-top: 15px;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+    }
+
+    .movetxt::-webkit-scrollbar {
+      display: none;
+    }
+
+    .movetxt h2 {
+      font-weight: 500;
+      letter-spacing: 3px;
+      font-family: monument;
+      text-transform: uppercase;
+      font-size: 50px;
+      display: inline-block;
+      -webkit-text-stroke: 2px rgb(0, 0, 0);
+      color: #fff;
+      animation: move2 4s linear infinite;
+    }
+
+    @keyframes move2 {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(calc(-100% - 4px));
+      }
+
+    }
+
+    .page9 h1 {
+      margin-top: 7%;
+      margin-left: 10%;
+      font-family: monument;
+      font-size: 30px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .page9 .para1 {
+      font-size: 17px;
+      text-transform: capitalize;
+      width: 350px;
+      margin-top: -3%;
+      margin-left: 25%;
+    }
+
+    .page9 p span {
+      border: 1px solid black;
+      padding: 3px 12px;
+      border-radius: 50%;
+    }
+
+    .page9 .para2 {
+      font-size: 17px;
+      text-transform: capitalize;
+      width: 350px;
+      margin-top: -8%;
+      margin-left: 65%;
+    }
+
+    .page9 .page9img1 {
+      position: absolute;
+      bottom: -8%;
+      height: 50%;
+      left: 24%;
+      width: 30%;
+      object-fit: cover;
+      object-position: 20% 80%;
+    }
+
+    .page9 .page9img2 {
+      height: 50%;
+      position: absolute;
+      bottom: -8%;
+      object-fit: cover;
+      right: 10%;
+      width: 26%;
+    }
+
+    .footer {
+      position: relative;
+      height: 50%;
+      width: 100%;
+      /* background-color: blue; */
+    }
+
+    .footer footer {
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+      position: absolute;
+      height: 60%;
+      width: 100%;
+      bottom: 10px;
+      /* background-color: brown; */
+      display: flex;
+    }
+
+    footer .div1 {
+      display: flex;
+      justify-content: space-around;
+      height: 100%;
+      width: 35%;
+      /* background-color: blue; */
+      border-right: 2px solid black;
+    }
+
+
+    .div1 h1 {
+      margin-top: 40px;
+      font-family: Monument;
+      text-transform: lowercase;
+      font-size: 40px;
+      font-weight: 600;
+      letter-spacing: -2px;
+      font-size: 37px;
+      /* margin-left: -50px; */
+    }
+
+    .div1 h1 sup {
+      margin-left: -10px;
+      font-size: 20px;
+      font-weight: 100;
+    }
+
+    .div1 h1 sub {
+      letter-spacing: 1px;
+      position: absolute;
+      margin-left: -10px;
+      font-size: 8px;
+      font-weight: 100;
+      top: 40%;
+      left: 10%;
+    }
+
+    .footer .div1 a {
+      font-weight: 600;
+      margin-top: 45px;
+      font-size: 18px;
+      font-family: gilroy;
+      text-transform: capitalize;
+      text-decoration: none;
+      color: black;
+
+    }
+
+    footer .div2 {
+      text-align: center;
+      height: 100%;
+      width: 25%;
+      /* background-color: rgb(63, 63, 99); */
+      border-right: 2px solid black;
+    }
+
+    .div2 h4 {
+      margin-top: 45px;
+      font-family: gilroy;
+      text-transform: capitalize;
+      /* text-decoration: none; */
+      /* text-align: center; */
+      font-size: 18px;
+      font-weight: 600;
+
+
+    }
+
+    footer .div3 {
+      /* text-align: center; */
+      height: 100%;
+      width: 40%;
+      /* background-color: rgb(44, 44, 197); */
+      /* border-right: 2px solid black; */
+    }
+     .div3 h2 {
+      padding-left: 40px;
+      margin-top: 40px;
+      font-family: gilroy;
+      text-transform: capitalize;
+      /* text-decoration: none; */
+      /* text-align: center; */
+      font-size: 18px;
+      font-weight: 600;
+      border-bottom: 2px solid black;
+      padding-bottom: 30px;
+
+
+    }
+    .div3 i{
+      
+      padding-left: 20px;
+      font-size: 24px;
+      transition: .3s;
+    }
+    .div3 i:hover{
+      cursor: pointer;
+      color: rgb(255, 0, 157);
+      /* font-size: 26px; */
+    }
+    .div3 p{
+      padding-top: 5px;
+      padding-left: 20px;
+      text-transform: capitalize;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="page1">
+      <div class="nav">
+        <h1>premier <sup>&copy;</sup>
+          <sub>model management</sub>
+        </h1>
+        <nav>
+          <a href="">models</a>
+          <a href="">womans/mans</a>
+          <a href="">agency/blog/information</a>
+          <i class="ri-search-line"></i>
+        </nav>
       </div>
-      <div class="scroller">
-        <div class="container">
-          <div class="elem">
-        <img src="https://images.unsplash.com/photo-1683430674994-e31665b84304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
+      <div class="image">
+        <video autoplay muted loop
+          src="https://player.vimeo.com/external/380058173.sd.mp4?s=4912716d801f6c1d5e1ebfc1619b1df8065a7d88&profile_id=164&oauth2_token_id=57447761"></video>
+        <div class="imgcont">
+          <div class="heading">
+            <h2>photography <br>and films</h2>
+            <div>01</div>
           </div>
-          
-          <div class="elem">
-        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
-          </div>
-            <div class="elem">
-        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
-          </div>
-           <div class="elem">
-        <img src="https://images.unsplash.com/photo-1683430674994-e31665b84304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
-          </div>
-          
-          <div class="elem">
-        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
-          </div>
-            <div class="elem">
-        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
-          </div>
-           <div class="elem">
-        <img src="https://images.unsplash.com/photo-1683430674994-e31665b84304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
-          </div>
-          
-          <div class="elem">
-        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
-          </div>
-            <div class="elem">
-        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
-          </div>
+          <div class="btm">
+            <p>explore</p>
+            <img src="/arrow.png" alt="">
 
-        </div>
-        <div class="container">
-          <div class="elem">
-        <img src="https://images.unsplash.com/photo-1683430674994-e31665b84304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
-          </div>
-          
-          <div class="elem">
-        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
-          </div>
-            <div class="elem">
-        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
-          </div>
-           <div class="elem">
-        <img src="https://images.unsplash.com/photo-1683430674994-e31665b84304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
-          </div>
-          
-          <div class="elem">
-        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
-          </div>
-            <div class="elem">
-        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
-          </div>
-           <div class="elem">
-        <img src="https://images.unsplash.com/photo-1683430674994-e31665b84304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
-          </div>
-          
-          <div class="elem">
-        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
-          </div>
-            <div class="elem">
-        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-          <h3>huichui</h3>
           </div>
 
         </div>
 
       </div>
-      <div class="page2">
-        <div class="alphabet">
-          <h5>all</h5>
-         
-          <p>a</p>
-          <p>b</p>
-          <p>c</p>
-          <p>d</p>
-          <p>e</p>
-          <p>f</p>
-          <p>g</p>
-          <p>h</p>
-          <p>i</p>
-          <p>j</p>
-          <p>k</p>
-          <p>l</p>
-          <p>m</p>
-          <p>n</p>
-          <p>o</p>
-          <p>p</p>
-          <p>q</p>
-          <p>r</p>
-          <p>s</p>
-          <p>t</p>
-          <p>u</p>
-          <p>v</p>
-          <p>w</p>
-          <p>x</p>
-          <p>y</p>
-          <p>z</p>
-
+    </div>
+    <div class="scroller">
+      <div class="container">
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1683430674994-e31665b84304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
         </div>
-        <div class="imagesection">
-          <div class="page2-left">
-          <img src="https://images.unsplash.com/photo-1441123694162-e54a981ceba5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bW9kcmVuJTIwZ2lybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-        <h2>vogue / shot</h2>
+
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
+        </div>
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
+        </div>
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1683430674994-e31665b84304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
+        </div>
+
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
+        </div>
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
+        </div>
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1683430674994-e31665b84304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
+        </div>
+
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
+        </div>
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
+        </div>
+
+      </div>
+      <div class="container">
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1683430674994-e31665b84304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
+        </div>
+
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
+        </div>
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
+        </div>
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1683430674994-e31665b84304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
+        </div>
+
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
+        </div>
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
+        </div>
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1683430674994-e31665b84304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
+        </div>
+
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
+        </div>
+        <div class="elem">
+          <img
+            src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>huichui</h3>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="page2">
+      <div class="alphabet">
+        <h5>all</h5>
+
+        <p>a</p>
+        <p>b</p>
+        <p>c</p>
+        <p>d</p>
+        <p>e</p>
+        <p>f</p>
+        <p>g</p>
+        <p>h</p>
+        <p>i</p>
+        <p>j</p>
+        <p>k</p>
+        <p>l</p>
+        <p>m</p>
+        <p>n</p>
+        <p>o</p>
+        <p>p</p>
+        <p>q</p>
+        <p>r</p>
+        <p>s</p>
+        <p>t</p>
+        <p>u</p>
+        <p>v</p>
+        <p>w</p>
+        <p>x</p>
+        <p>y</p>
+        <p>z</p>
+
+      </div>
+      <div class="imagesection">
+        <div class="page2-left">
+          <img src="https://images.pexels.com/photos/2065203/pexels-photo-2065203.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="">
+          <h2>vogue / shot</h2>
         </div>
         <div class="page2-right">
-          <img src="https://images.unsplash.com/photo-1529810106969-29cc261b3789?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-        <h3>Lorem ipsum sit  consectetur. dolor sit amet consectetur.</h3>
-      <p> adipisicing elit. Eum minima et itaque sed  sit amet consectetur adipisicing elit. Eum minima et itaque sed laborum? Natus!</p> 
-      </div>
+          <img
+            src="https://images.unsplash.com/photo-1529810106969-29cc261b3789?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+          <h3>Lorem ipsum sit consectetur. dolor sit amet consectetur.</h3>
+          <p> adipisicing elit. Eum minima et itaque sed sit amet consectetur adipisicing elit. Eum minima et itaque sed
+            laborum? Natus!</p>
         </div>
-        
+      </div>
+
+
+    </div>
+    <div class="page3">
+      <div class="page3-left">
+        <img class="animation"
+          src="data:image/png;base64,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"
+          alt="">
+        <img class="arrow" src="arrow.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ea deserunt nostrum omnis cupiditate.
+          Repellendus excepturi vero maiores porro ex!</p>
+      </div>
+      <div class="page3-right">
+        <img
+          src="https://images.unsplash.com/photo-1556347961-f9521a88cb8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9kZWxzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+          alt="">
+      </div>
+    </div>
+    <div class="page4">
+      <img
+        src="https://images.unsplash.com/photo-1516575150278-77136aed6920?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW9kZWxzfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt="">
+
+    </div>
+    <div class="page5">
+      <h1 class="a">updates</h1>
+      <div class="box">
+        <h1>mens fashion</h1>
+        <div class="boxtxt">
+          <h2>ankit jatav</h1>
+            <h5>03/2020</h5>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1456327102063-fb5054efe647?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9kZWwlMjBtZW5zfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="">
+      </div>
+      <div class="box">
+        <h1>models fashion</h1>
+        <div class="boxtxt">
+          <h2>sharthak bhai</h1>
+            <h5>03/2020</h5>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1615212049275-95561aebe1b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1vZGVsfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="">
 
       </div>
-      
+      <div class="box">
+        <h1>mens fashion</h1>
+        <div class="boxtxt">
+          <h2>shivam kumar</h1>
+            <h5>03/2020</h5>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1535890552191-3bc432b590ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1vZGVsJTIwbWVuc3xlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+          alt="">
+      </div>
+      <div class="box">
+        <h1>womens fashion</h1>
+        <div class="boxtxt">
+          <h2>kajal singh</h1>
+            <h5>03/2020</h5>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1511819894338-9ec3e9989093?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=812&q=80"
+          alt="">
+      </div>
+      <div class="box">
+        <h1>mens fashion</h1>
+        <div class="boxtxt">
+          <h2>shivam kumar</h1>
+            <h5>03/2020</h5>
+        </div>
+        <img
+          src="https://plus.unsplash.com/premium_photo-1661720137713-a85a195e0b1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt="">
+      </div>
+      <!-- <div class="box">
+          <h1>womens fashion</h1>
+          <div class="boxtxt">
+            <h2>kajal singh</h1>
+            <h5>03/2020</h5>
+          </div>
+          <img src="https://images.unsplash.com/photo-1600484732755-b8246d320dda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+        </div> -->
+
     </div>
-  </body>
+    <div class="page6">
+      <div class="page6-left">
+        <img
+          src="https://images.unsplash.com/photo-1535207010348-71e47296838a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt="">
+      </div>
+      <div class="page6-right">
+        <h1>movie shot</h1>
+        <h5>london based tom mitchell has <br>a distinct aesthetic within his <br>
+          photography and movie image
+        </h5>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis dolorem delectus iusto incidunt natus Lorem
+          ipsum dolor sit, amet consectetur adipisicing. magni cupiditate architecto! Asperiores, harum expedita!</p>
+        <div class="images">
+          <img
+            src="https://images.unsplash.com/photo-1514500445542-6e6d5e65182c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60"
+            alt="" class="first">
+          <img
+            src="https://images.unsplash.com/photo-1485463598028-44d6c47bf23f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+            alt="" class="second">
+
+        </div>
+      </div>
+
+    </div>
+    <div class="page7">
+      <img src="https://images.pexels.com/photos/247204/pexels-photo-247204.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="">
+    </div>
+    <div class="page8">
+      <div class="page8-left">
+        <img
+          src="https://images.pexels.com/photos/3969214/pexels-photo-3969214.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="">
+      </div>
+      <div class="page8-right">
+        <img
+          src="https://images.unsplash.com/photo-1529810106969-29cc261b3789?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          alt="">
+        <div class="box8txt">
+          <h3>Lorem ipsum sit consectetur. dolor sit amet consectetur.</h3>
+          <p> adipisicing elit. Eum minima et itaque sed sit amet consectetur adipisicing elit. Eum minima et itaque sed
+            laborum? Natus!</p>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="page9">
+      <div class="movetxt">
+        <h2>premeir model 2020</h2>
+        <h2>premeir model 2020</h2>
+        <h2>premeir model 2020</h2>
+        <h2>premeir model 2020</h2>
+        <h2>premeir model 2020</h2>
+        <h2>premeir model 2020</h2>
+        <h2>premeir model 2020</h2>
+        <h2>premeir model 2020</h2>
+      </div>
+      <h1>blog</h1>
+      <p class="para1"><span>b</span>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci ratione minus eveniet mollitia? Rem
+        consequuntur error praesentium voluptatem sint provident perferendis maiores quidem repellendus, ratione
+        obcaecati quos ipsum modi enim.</p>
+      <p class="para2"><span>b</span>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci ratione minus eveniet mollitia? Rem
+        consequuntur error praesentium voluptatem sint provident perferendis maiores quidem repellendus, ratione
+        obcaecati quos ipsum modi enim.</p>
+      <img
+        src="https://images.pexels.com/photos/2416483/pexels-photo-2416483.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+        alt="" class="page9img1">
+      <img
+        src="https://images.pexels.com/photos/2772536/pexels-photo-2772536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="" class="page9img2">
+
+    </div>
+    <div class="footer">
+      <footer>
+        <div class="div1">
+          <h1>premier <sup>&copy;</sup>
+            <sub>model management</sub>
+
+          </h1>
+          <a href="">models</a>
+        </div>
+        <div class="div2">
+          <h4>womens/man</h4>
+        </div>
+        <div class="div3">
+          <h2>agency/blog/information/contact </h2>
+          <br>
+          <i class="ri-instagram-line"></i>
+          <i class="ri-facebook-box-fill"></i>
+          <i class="ri-twitter-fill"></i>
+          <i class="ri-youtube-line"></i>
+          <i class="ri-linkedin-box-fill"></i>
+          <p>&copy;all contant copyright <br>primeir models inc. 1981-2020/ or there respective <br>owners where indicated </p>
+
+        </div>
+
+      </footer>
+
+    </div>
+
+
+
+
+
+  </div>
+</body>
+
 </html>
